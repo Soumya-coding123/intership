@@ -12,135 +12,60 @@
 </head>
 
 <body>
-  
-  <div class="features-container">
-    <h1 class="container">WHAT IS YOUR INTEREST?</h1>
+
+<div class="container">
+  <form action="action_page.php" method="post">
+    <div class="form-left">
+    <label for="name">Your name:</label>
+  <input type="text" id="name" name="name" required><br>
+  <label for="age">Your age:</label>
+  <input type="number" id="age" name="age" min="18" max="99" required><br>
+  <label for="Email">Your Email:</label>
+  <input type="text" id="email" name="Email"  required><br>
+  <label for="phone">Your Phone no:</label>
+  <input type="number" id="phone" name="phone " required><br>
+  <label for="gender">Your gender:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+  <label for="location">Your preferred location:</label>
+  <select id="location" name="location" required>
+    <option value="">Select an option</option>
+    <option value="north">North</option>
+    <option value="south">South</option>
+    <option value="east">East</option>
+    <option value="west">West</option>
+    <option value="central">Central</option>
+  </select><br>
+  <label for="budget">Your monthly budget:</label>
+  <input type="range" id="budget" name="budget" min="0" max="10000" step="100" value="5000"><br>
+  <label for="hobbies">Your hobbies and interests:</label>
+  <input type="checkbox" id="reading" name="hobbies" value="reading" required>
+  <label for="reading">Reading</label>
+  <input type="checkbox" id="music" name="hobbies" value="music">
+  <label for="music">Music</label>
+  <input type="checkbox" id="sports" name="hobbies" value="sports">
+  <label for="sports">Sports</label>
+  <input type="checkbox" id="movies" name="hobbies" value="movies">
+  <label for="movies">Movies</label>
+  <input type="checkbox" id="travel" name="hobbies" value="travel">
+  <label for="travel">Travel</label><br>
+  <label for="bio">A short bio about yourself:</label>
+  <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Write something.." required></textarea><br>
+  <form id="contact" action="action_page.php" method="post" class="form">
+    <button type="submit" name="submit" id="contact">find ur roommate</button>
   </div>
-
-  <form id="app-cover">
-    <div id="select-box">
-      <input type="checkbox" id="options-view-button">
-      <div id="select-button" class="brd">
-        <div id="selected-value">
-          <span>Select a platform</span>
-        </div>
-        <div id="chevrons">
-          <i class="fas fa-chevron-up"></i>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-      </div>
-
-
-      <div id="options">
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="codepen">
-          <input class="s-c bottom" type="radio" name="platform" value="codepen">
-          <i class="fab fa-codepen"></i>
-          <span class="label">CodePen</span>
-          <span class="opt-val">CodePen</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="dribbble">
-          <input class="s-c bottom" type="radio" name="platform" value="dribbble">
-          <i class="fab fa-dribbble"></i>
-          <span class="label">Dribbble</span>
-          <span class="opt-val">Dribbble</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="behance">
-          <input class="s-c bottom" type="radio" name="platform" value="behance">
-          <i class="fab fa-behance"></i>
-          <span class="label">Behance</span>
-          <span class="opt-val">Behance</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="hackerrank">
-          <input class="s-c bottom" type="radio" name="platform" value="hackerrank">
-          <i class="fab fa-hackerrank"></i>
-          <span class="label">HackerRank</span>
-          <span class="opt-val">HackerRank</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="stackoverflow">
-          <input class="s-c bottom" type="radio" name="platform" value="stackoverflow">
-          <i class="fab fa-stack-overflow"></i>
-          <span class="label">StackOverflow</span>
-          <span class="opt-val">StackOverflow</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="freecodecamp">
-          <input class="s-c bottom" type="radio" name="platform" value="freecodecamp">
-          <i class="fab fa-free-code-camp"></i>
-          <span class="label">FreeCodeCamp</span>
-          <span class="opt-val">FreeCodeCamp</span>
-        </div>
-        <div id="option-bg"></div>
-      </div>
+    <div class="form-right">
+      <h1>FIND  YOUR HOME AWAY FROM HOME WITH</h1>
+      
+      <span>ROOMMATES.</span>
+      <p>Share the space, not the drama</p>
     </div>
   </form>
-  </select>
-  <form id="app-cover">
-    <div id="select-box">
-      <input type="checkbox" id="options-view-button">
-      <div id="select-button" class="brd">
-        <div id="selected-value">
-          <span>Select a platform</span>
-        </div>
-        <div id="chevrons">
-          <i class="fas fa-chevron-up"></i>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-      </div>
-
-
-      <div id="options">
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="codepen">
-          <input class="s-c bottom" type="radio" name="platform" value="codepen">
-          <i class="fab fa-codepen"></i>
-          <span class="label">CodePen</span>
-          <span class="opt-val">CodePen</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="dribbble">
-          <input class="s-c bottom" type="radio" name="platform" value="dribbble">
-          <i class="fab fa-dribbble"></i>
-          <span class="label">Dribbble</span>
-          <span class="opt-val">Dribbble</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="behance">
-          <input class="s-c bottom" type="radio" name="platform" value="behance">
-          <i class="fab fa-behance"></i>
-          <span class="label">Behance</span>
-          <span class="opt-val">Behance</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="hackerrank">
-          <input class="s-c bottom" type="radio" name="platform" value="hackerrank">
-          <i class="fab fa-hackerrank"></i>
-          <span class="label">HackerRank</span>
-          <span class="opt-val">HackerRank</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="stackoverflow">
-          <input class="s-c bottom" type="radio" name="platform" value="stackoverflow">
-          <i class="fab fa-stack-overflow"></i>
-          <span class="label">StackOverflow</span>
-          <span class="opt-val">StackOverflow</span>
-        </div>
-        <div class="option">
-          <input class="s-c top" type="radio" name="platform" value="freecodecamp">
-          <input class="s-c bottom" type="radio" name="platform" value="freecodecamp">
-          <i class="fab fa-free-code-camp"></i>
-          <span class="label">FreeCodeCamp</span>
-          <span class="opt-val">FreeCodeCamp</span>
-        </div>
-        <div id="option-bg"></div>
-      </div>
-    </div>
-  </form>
-  </select>
+</div>
 </body>
 
 </html>

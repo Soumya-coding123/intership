@@ -1,4 +1,4 @@
-body{
+/* body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
@@ -418,4 +418,98 @@ body{
     display: block; /* Display choices when active */
 .container{
   font-size:40px;
+} */
+
+/* 
+/* CSS code */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  background-color: black;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+   margin: 50px auto;
+  background-color: #333;
+  color: #fff;
+  border-radius: 100px;
+  overflow: hidden;
+ 
+}
+
+form {
+  display: flex;
+  align-items: column;
+}
+
+.form-left {
+  width:80%;
+  padding:50px;
+}
+
+.form-right {
+  width:60%;
+  padding:50px;
+  background-color: #222;
+  display:flex;
+  justify-content:column;
+  align-items:normal;
+}
+.form-right span{
+  color:aqua;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f90;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 65px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  word-spacing: 600px;
+
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 20px; /* change this value as needed */
+
 }
